@@ -1,12 +1,21 @@
 pull_request_rules:
   - name: Automatic merge on my own MR
     conditions:
-      - author=damien-devpy
+        - author=damien-devpy
     actions:
       merge:
         method: squash
+
+  - name: auto backport to BI branch
+    conditions:
+        - author=damien-devpy
+    actions:
+      backport:
+        branches:
+            - bi
+
   - name: delete branch after merge
     conditions:
-      - merged
+        - merged
     actions:
       delete_head_branch:
