@@ -1,7 +1,12 @@
 pull_request_rules:
-  - name: Automatic merge on my own MR
+  - name: Automatic merge
     conditions:
-        - author=damien-devpy
+        - or:
+            # own PR or backport from mergify
+            - author=damien-devpy
+            - and:
+                - author=mergify
+                - base~=^mergify/.*
     actions:
       merge:
         method: squash
