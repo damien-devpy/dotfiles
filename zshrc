@@ -25,6 +25,7 @@ export WOOB_USE_OBSOLETE_RESPONSES_DIR=1
 
 # Aliases
 alias web='cd ~/dev/woob && source ~/dev/woob/.venv/bin/activate'
+alias back='cd ~/dev/backend && source ~/dev/backend/.venv/bin/activate'
 alias gg='git grep -in'
 alias bp='setxkbmap fr bepo'
 alias az='setxkbmap fr'
