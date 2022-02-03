@@ -22,6 +22,7 @@ eval "$(pyenv init -)"
 
 # Env
 export WOOB_USE_OBSOLETE_RESPONSES_DIR=1
+export BACKPORT_PATH='/home/damien/dev/woob-backport'
 
 # Aliases
 alias web='cd ~/dev/woob && source ~/dev/woob/.venv/bin/activate'
