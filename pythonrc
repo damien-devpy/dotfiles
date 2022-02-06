@@ -1,0 +1,4 @@
+from rich import pretty
+from rich import inspect as rich_inspect
+
+pretty.install()
