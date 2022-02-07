@@ -5,7 +5,7 @@ pull_request_rules:
             # own PR or backport from mergify
             - author=damien-devpy
             - and:
-                - author=Mergifyio
+                - author~=^mergify\[bot\]
                 - head~=^mergify\/.*
     actions:
       merge:
