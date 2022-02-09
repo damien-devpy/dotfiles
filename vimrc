@@ -7,7 +7,7 @@ set relativenumber
 set path +=**
 
 :nnoremap ,lg iself.logger.warning("")<Esc>hi
-:nnoremap ,bp ibreakpoint()<Esc>o<Esc>
+:nnoremap ,bp obreakpoint()<Esc>
 
 call plug#begin()
 
