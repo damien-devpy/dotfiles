@@ -8,6 +8,8 @@ set path +=**
 
 :nnoremap ,lg iself.logger.warning("")<Esc>hi
 :nnoremap ,bp obreakpoint()<Esc>
+:nnoremap rbp :g/breakpoint()/d<Enter>
+
 
 call plug#begin()
 
